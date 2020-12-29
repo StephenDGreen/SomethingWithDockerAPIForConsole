@@ -11,7 +11,7 @@ namespace Something.UI
         public static void Main(string[] args)
         {
             var services = new ServiceCollection();
-            var baseUrl = @"http://something.api:8080";
+            var baseUrl = @"http://something.api";
             var baseUri = new Uri(baseUrl);
             services.AddHttpClient<ISomethingService, SomethingService>(client =>
             {

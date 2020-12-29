@@ -8,7 +8,6 @@ services:
       dockerfile: Something.API/Dockerfile
     ports:
       - 8080:80
-      - 44380:443
     networks:
       - sample_network
 
@@ -25,4 +24,3 @@ services:
 networks:
   sample_network:
     driver: bridge
-        
